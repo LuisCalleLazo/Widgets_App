@@ -49,7 +49,12 @@ class _CustomListTitle extends StatelessWidget {
       title: Text(menuItems.title),
       subtitle: Text(menuItems.subTitle),
       onTap: () {
-        // TODO: navegar a otra pantalla
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => const ButtonsScreen(),
+        //   ),
+        // );
+        Navigator.pushNamed(context, menuItems.link);
       },
     );
   }
